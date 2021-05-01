@@ -1,0 +1,126 @@
+<html>
+
+<title>Patients details</title>
+<style>
+	body
+		{	
+			background-image: url("a.jpg");
+			background-color: green;
+		}
+</style>
+<body >
+<table width="20%"  align="center" border="10px green">
+
+<tr>
+	<td colspan=2><center><font size=20>
+	<b> Patients Details</b></font></center>
+	</td>
+</tr>
+<tr>
+	<td>Patients  Name</td>
+	<td><input type="text" size=25 value="" id="a">
+	</td>
+</tr>
+
+<tr>
+	<td>Patients Age</td>
+	<td><input type="text" size=25 value="" id="b">
+	</td>
+</tr>
+<tr>
+	<td>Fathers name</td>
+	<td><input type="text" size=25 value="" id="c" >
+	</td>
+</tr>
+<tr>
+	<td>Mothers  Name</td>
+	<td><input type="text" size=25 value="" id="d">
+	</td>
+</tr>
+<tr>
+	<td>Town</td>
+	<td><input type="text" size=25 value="" id="e">
+	</td>
+</tr>
+<tr>
+	<td>City</td>
+	<td><input type="text" size=25 value="" id="f">
+	</td>
+</tr>
+<tr>
+	<td>Blood Group</td>
+	<td><input type="text" size=25 value="" id="g">
+	</td>
+</tr>
+<tr>
+	<td>Disease Name</td>
+	<td><input type="text" size=25 value="" id="h">
+	</td>
+</tr>
+<tr>
+	<td>Assigned Doctor Name</td>
+	<td><input type="text" size=25 value="" id="i" >
+	</td>
+</tr>
+
+
+<tr>
+	<td><button type="button" onclick="myFunction()">Try it</button></td>
+</tr>
+<link rel="stylesheet" href="c.css">
+
+
+<table  id="myTable" width="20%"  align="center" border="10px red ">
+  <tr>
+	<br>
+	<br>
+	<br>
+	<th>Patient Name</th>
+	<th>Patients Age</th>
+	<th>Fathers Name</th>
+	<th>Mothers Name</th>
+	<th>Town</th>
+	<th>City</th>
+	<th>Blood Group</th>
+	<th>Disease Name</th>
+	<th>Assigned Doctor Name</th>
+	
+
+  </tr>
+</table>
+<script>
+	
+	function myFunction() 
+	{
+  		var table = document.getElementById("myTable");
+  		var row = table.insertRow(table.length);
+  		var cell1 = row.insertCell(0);
+  		var cell2 = row.insertCell(1);
+		var cell3 = row.insertCell(2);
+		var cell4 = row.insertCell(3);
+		var cell5 = row.insertCell(4);
+		var cell6 = row.insertCell(5);
+		var cell7 = row.insertCell(6);
+		var cell8 = row.insertCell(7);
+		var cell9 = row.insertCell(8);
+  		cell1.innerHTML = document.getElementById("a").value;
+		cell2.innerHTML = document.getElementById("b").value;
+		cell3.innerHTML = document.getElementById("c").value;
+		cell4.innerHTML = document.getElementById("d").value;
+		cell5.innerHTML = document.getElementById("e").value;
+		cell6.innerHTML = document.getElementById("f").value;
+		cell7.innerHTML = document.getElementById("g").value;
+		cell8.innerHTML = document.getElementById("h").value;
+		cell9.innerHTML = document.getElementById("i").value;
+		
+
+  		
+}
+</script>
+
+
+
+
+
+</body>
+</html>
